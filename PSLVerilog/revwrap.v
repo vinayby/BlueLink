@@ -17,7 +17,8 @@
  * 
  */
 
-module psl_accel (
+`define WRAPMODULENAME(name)  ``name``_wrapper
+module `WRAPMODULENAME(`MODULENAME)(
 	input  [   0:   5]  ha_brad,
 	output ah_cvalid,
 	input  [   0:   7]  ha_brtag,

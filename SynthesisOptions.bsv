@@ -35,8 +35,8 @@ instance DefaultValue#(SynthesisOptions);
         showData:           False,
         verbose:            False,      // show everything
 
-        dsp: AlteraStratixV,
-        mem: AlteraStratixV
+        dsp: BSVBehavioral,
+        mem: BSVBehavioral
     };
 endinstance
 

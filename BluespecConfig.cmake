@@ -47,7 +47,7 @@ SET(BLUESPEC_VERILOG_SIM_TIMESCALE "1ns/1ns" CACHE STRING "-timescale option for
 ## Bluespec compiler paths
 SET(BLUESPEC_BSC_PATH "+" CACHE PATH "Include path for Bluespec")
 SET(BLUESPEC_BSC_BDIR "${CMAKE_BINARY_DIR}/bdir" CACHE PATH "Directory for .ba and .bo objects" )
-SET(BLUESPEC_BSC_EXECUTABLE "/usr/local/Bluespec/bin/bsc")
+SET(BLUESPEC_BSC_EXECUTABLE "bsc")
 MARK_AS_ADVANCED(BLUESPEC_BSC_BDIR)
 
 ## Bluespec compilation options
@@ -56,7 +56,7 @@ SET(BLUESPEC_BSC_ASSERTIONS ON CACHE BOOL "-check-assert switch")
 
 SET(BLUESPEC_BSC_OPTIONS "" CACHE STRING "Additional compile (sim & verilog) switches not listed above")
 SET(BLUESPEC_BSC_SIM_OPTIONS "" CACHE STRING "Additional simulation switches not listed above")
-SET(BLUESPEC_BSC_VERILOG_OPTIONS "-opt-undetermined-vals;-unspecified-to X" CACHE STRING "Additional Verilog switches not listed above")
+SET(BLUESPEC_BSC_VERILOG_OPTIONS "-opt-undetermined-vals;-unspecified-to;X" CACHE STRING "Additional Verilog switches not listed above")
 
 SET(BLUESPEC_BLUESIM_LIBRARY_DIRS "" CACHE STRING "Additional -L paths when compiling bsc -sim")
 SET(BLUESPEC_LICENSE_WARNING "30" CACHE STRING "")
